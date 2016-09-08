@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="600.0" styleClass="background" stylesheets="@JMetroDarkTheme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eventhorizonwebdesign.onezip.SimpleExtractController">
+   <top>
+      <Label prefHeight="46.0" prefWidth="600.0" text="  Extract" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="216.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="30.0" prefWidth="400.0" />
+            <TextField fx:id="archiveField" prefHeight="25.0" prefWidth="319.0" promptText="Archive..." styleClass="text-input" />
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="400.0" text="...will be extracted to..." textFill="#838383">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+            <GridPane prefHeight="25.0" prefWidth="129.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="374.0" minWidth="10.0" prefWidth="289.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="111.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="destinationField" prefHeight="25.0" prefWidth="191.0" promptText="Destination..." />
+                  <Button fx:id="chooseDestButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Browse" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <VBox prefHeight="59.0" prefWidth="400.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <Button fx:id="startButton" defaultButton="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="130.0" text="Extract" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

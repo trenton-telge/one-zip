@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sevenzipjbinding-AllPlatforms">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/sevenzipjbinding-AllPlatforms.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

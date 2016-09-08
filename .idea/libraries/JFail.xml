@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JFail">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JFail/out/artifacts/JFail_jar/JFail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

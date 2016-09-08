@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jfxtras-styles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/jfxtras-styles/jfxtras_jar/trunk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

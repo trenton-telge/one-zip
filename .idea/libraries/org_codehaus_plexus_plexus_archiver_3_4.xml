@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="org.codehaus.plexus:plexus-archiver:3.4" type="repository">
+    <properties maven-id="org.codehaus.plexus:plexus-archiver:3.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-archiver-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-container-default-1.0-alpha-9-stable-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-utils-3.0.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/classworlds-1.1-alpha-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-io-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/commons-io-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/commons-compress-1.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/snappy-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/jsr305-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/xz-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-archiver-3.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../LIBRARIES/plexus-archiver-3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

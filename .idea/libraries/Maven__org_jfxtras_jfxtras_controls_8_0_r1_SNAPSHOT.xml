@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jfxtras:jfxtras-controls:8.0-r1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-controls/8.0-r1-SNAPSHOT/jfxtras-controls-8.0-r1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-controls/8.0-r1-SNAPSHOT/jfxtras-controls-8.0-r1-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-controls/8.0-r1-SNAPSHOT/jfxtras-controls-8.0-r1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
