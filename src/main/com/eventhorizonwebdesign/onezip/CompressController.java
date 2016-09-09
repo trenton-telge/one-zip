@@ -49,7 +49,6 @@ public class CompressController {
     @FXML
     Button startButton;
 
-    private String selectedExtension = "zip";
 
     @FXML
     private void initialize(){
@@ -61,10 +60,10 @@ public class CompressController {
             FileChooser df = new FileChooser();
                     df.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("Archive File", "*.zip", "*.zipx", "*.rar", "*.tar", "*.tar", "*.tgz", "*.iso"));
             df.setTitle("Choose destination...");
-            df.setInitialFileName("archive." + selectedExtension);
+            df.setInitialFileName("archive." + Main.selectedExtension);
             Main.workingDestination = df.showSaveDialog(new Stage());
             destinationField.setText(Main.workingDestination.getAbsolutePath());
-            selectedExtension = FilenameUtils.getExtension(Main.workingDestination.toString());
+            Main.selectedExtension = FilenameUtils.getExtension(Main.workingDestination.toString());
         });
         zipRadio.setOnAction(e -> {
             updateExtensionFromRadio("zip");
@@ -86,7 +85,7 @@ public class CompressController {
         });
         startButton.setOnAction(e -> {
             if (Main.workingDestination != null){
-                Main.workingDestination = new File(Main.workingDestination.toString() + "." + selectedExtension);
+                Main.workingDestination = new File(Main.workingDestination.toString() + "." + Main.selectedExtension);
                 Node node=(Node) e.getSource();
                 Stage stage=(Stage) node.getScene().getWindow();
                 try {
@@ -113,27 +112,27 @@ public class CompressController {
         isoRadio.setSelected(false);
         switch (recentlyPressedExt){
             case "zip":
-                selectedExtension = "zip";
+                Main.selectedExtension = "zip";
                 zipRadio.setSelected(true);
                 break;
             case "zipx":
-                selectedExtension = "zipx";
+                Main.selectedExtension = "zipx";
                 zipxRadio.setSelected(true);
                 break;
             case "rar":
-                selectedExtension = "rar";
+                Main.selectedExtension = "rar";
                 rarRadio.setSelected(true);
                 break;
             case "tar":
-                selectedExtension = "tar";
+                Main.selectedExtension = "tar";
                 tarRadio.setSelected(true);
                 break;
             case "tgz":
-                selectedExtension = "tgz";
+                Main.selectedExtension = "tgz";
                 tgzRadio.setSelected(true);
                 break;
             case "iso":
-                selectedExtension = "iso";
+                Main.selectedExtension = "iso";
                 isoRadio.setSelected(true);
                 break;
         }

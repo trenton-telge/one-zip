@@ -15,6 +15,7 @@ public class Main extends Application {
     public static File workingArchive;
     public static List<File> workingFiles;
     public static File workingDestination;
+    public static String selectedExtension = "zip";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
