@@ -1,10 +1,13 @@
 package com.eventhorizonwebdesign.onezip;
 
+import com.eventhorizonwebdesign.jfail.JFail;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.apache.commons.io.FilenameUtils;
@@ -63,6 +66,42 @@ public class CompressController {
             destinationField.setText(Main.workingDestination.getAbsolutePath());
             selectedExtension = FilenameUtils.getExtension(Main.workingDestination.toString());
         });
+        zipRadio.setOnAction(e -> {
+            updateExtensionFromRadio("zip");
+        });
+        zipxRadio.setOnAction(e -> {
+            updateExtensionFromRadio("zipx");
+        });
+        rarRadio.setOnAction(e -> {
+            updateExtensionFromRadio("rar");
+        });
+        tarRadio.setOnAction(e -> {
+            updateExtensionFromRadio("tar");
+        });
+        tgzRadio.setOnAction(e -> {
+            updateExtensionFromRadio("tgz");
+        });
+        isoRadio.setOnAction(e -> {
+            updateExtensionFromRadio("iso");
+        });
+        startButton.setOnAction(e -> {
+            if (Main.workingDestination != null){
+                Main.workingDestination = new File(Main.workingDestination.toString() + "." + selectedExtension);
+                Node node=(Node) e.getSource();
+                Stage stage=(Stage) node.getScene().getWindow();
+                try {
+                    Main.root = FXMLLoader.load(getClass().getResource("compress-progress.fxml"));
+                } catch (Exception e1){
+                    e1.printStackTrace();
+                    JFail.handleError(e1, true);
+                }
+                Scene scene = new Scene(Main.root);
+                stage.setScene(scene);
+                stage.show();
+            } else {
+                destinationField.setStyle("-fx-prompt-text-fill: crimson;");
+            }
+        });
     }
 
     private void updateExtensionFromRadio(String recentlyPressedExt){
@@ -98,9 +137,5 @@ public class CompressController {
                 isoRadio.setSelected(true);
                 break;
         }
-        Main.workingDestination = new File(Main.workingDestination.toString().concat())
-    }
-    private void updateExtensionFromText(){
-
     }
 }
