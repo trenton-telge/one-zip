@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sevenzipjbinding">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../LIBRARIES/sevenzipjbinding.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -25,5 +25,8 @@
         <module name="One Zip" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="One Zip" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
