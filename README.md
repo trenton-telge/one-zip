@@ -9,5 +9,3 @@ Compresses and decompresses
  * ZIP
  * ZIPX
 
-Created to fulfill COSC 1336.5003 Software Engineering project requirements at LOne Star College-CyFair
-
